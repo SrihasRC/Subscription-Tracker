@@ -13,11 +13,11 @@ app.use("/api/v1/users", userRouter)
 app.use("/api/v1/subscriptions", subscriptionRouter)
 
 app.get("/", (req, res) => {
-    res.send("Hello World!")
+    res.send("Hello World!");
 })
 
 app.listen(PORT, async () => {
-    console.log(`Server is running on http://localhost:${PORT}`)
+    console.log(`Server is running on http://localhost:${PORT}`);
 
-    await connectToDatabase()
+    await connectToDatabase();
 })
